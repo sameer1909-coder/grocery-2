@@ -1,0 +1,23 @@
+form{
+    
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+
+    
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+    font-size: 20px;
+    
+    
+}
+
+.p5-p6-text{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    
+}

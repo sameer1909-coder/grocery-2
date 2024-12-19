@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="stylesheets/style7.css">
+</head>
+
+<body>
+
+
+    <!--banner-->
+    <div class="container-fluid py-4">
+        <div class="mx-auto" style="width: 100px;">
+            FOOD&STUFF
+        </div>
+    </div>
+
+
+    <!--menu/navbar-->
+    <nav class="navbar navbar-expand-sm bg-light navbar-light">
+
+        <div class="container-fluid">
+
+            <!--toggler-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+
+                <!--menu items/ nav links-->
+                <ul class="navbar-nav">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">ALL PRODUCTS</a>
+                    </li>
+
+                    <!--dropdown menu-->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">AISLES</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Fruits & Vegetables</a></li>
+                            <li><a class="dropdown-item" href="#">Dairy & Eggs</a></li>
+                            <li><a class="dropdown-item" href="snacks.html">Snacks</a></li>
+                            <li><a class="dropdown-item" href="#">Frozen</a></li>
+                            <li><a class="dropdown-item" href="#">Bread & Bakery</a></li>
+                            <li><a class="dropdown-item" href="#">Pharmacy</a></li>
+                            <li><a class="dropdown-item" href="#">Household & Cleaning</a></li>
+                            <li><a class="dropdown-item" href="#">Fish & Seafood</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">FLYER</a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <div class="banner" style="background-image:url('snacksbanner.jpeg'); 
+           width: 100%;
+           background-size: cover;
+           background-position: center;
+           height: 200px;
+           ">
+
+    </div>
+
+    <!-- DUMMY ITEM CROISSANT START -->
+
+    <div class="container-fluid">
+        <div id="row1" class="row" style="margin-top: 50px; padding-bottom: 10vh;">
+            <div class="col-md-6" style="display: flex; justify-content: center;">
+                <img src="image/croissant.png" alt="" style="max-width: 300px; max-height: 300px; margin-top: auto;">
+            </div>
+
+            <div class="col-md-6">
+
+
+                <!--Product info, leave div blank if the characteristic does not apply-->
+
+                <div class="product-info-top">
+                    <h6 class="aisle-title">BAKERY</h6>
+                </div>
+                <div class="productEdit">
+                    <div class="product-name">Croissant</div>
+
+                    <div class="product-price">0.70$ ea</div>
+
+                    <button class="btn btn-sm btn-block myButton" type="button" data-bs-toggle="collapse" data-bs-target="#moreDescription" aria-expanded="false" aria-controls="moreDescription" style="background-color: rgb(250, 250, 250);">Product Description</button>
+
+                    <div class="collapse product-description" id="moreDescription">
+                        Homemade croissant
+
+                        <br>Product Number: 384837
+                    </div>
+
+
+                    <div class="product-size"></div>
+                    <div class="product-quantity">
+                        <h4>Quantity in storage:</h4>
+                        <h3>20</h3>
+
+                    </div>
+                    <div class="product-type"></div>
+                    <button onclick="location.href = 'p8.html';" class="btn btn-success btn-sm btn-block" type="submit" data-bs-toggle="collapse" data-bs-target="#" aria-expanded="false" aria-controls="moreDescription" id="button2id">Add</button>
+                    <button onclick="removeElement('row1')" class="btn btn-danger btn-sm btn-block" type="button" data-bs-toggle="collapse" data-bs-target="#" aria-expanded="false" aria-controls="moreDescription" id="button2id">Delete</button>
+                    <button onclick="location.href = 'p8.html';" class="btn btn-info btn-sm btn-block" type="button" data-bs-toggle="collapse" data-bs-target="#" aria-expanded="false" aria-controls="moreDescription" id="button2id">Edit</button>
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <!-- DUMMY EDIT ITEM PUMPKIN PIE START -->
+
+        <div id="row2" class="row" style="margin-top: 50px; padding-bottom: 10vh;">
+            <div class="col-md-6" style="display: flex; justify-content: center;">
+                <img src="image/pumpkin.jpg" alt="" style="max-width: 300px; max-height: 300px; margin-top: auto;">
+            </div>
+
+            <div class="col-md-6">
+
+
+                <!--Product info, leave div blank if the characteristic does not apply-->
+
+                <div class="product-info-top">
+                    <h6 class="aisle-title">BAKERY</h6>
+                </div>
+                <div class="productEdit">
+                    <div class="product-name">Pumpkin Pie</div>
+
+                    <div class="product-price">9,99$ ea</div>
+
+                    <button class="btn btn-sm btn-block myButton" type="button" data-bs-toggle="collapse" data-bs-target="#moreDescription" aria-expanded="false" aria-controls="moreDescription" style="background-color: rgb(250, 250, 250);">Product Description</button>
+
+                    <div class="collapse product-description" id="moreDescription">
+                        Seasonal delicious pie
+
+                        <br>Product Number: 9958203958
+                    </div>
+
+
+                    <div class="product-size"></div>
+                    <div class="product-quantity">
+                        <h4>Quantity in storage:</h4>
+                        <h3>10</h3>
+
+                    </div>
+                    <div class="product-type"></div>
+                    <button onclick="location.href = 'p8.html';" class="btn btn-success btn-sm btn-block" type="button" data-bs-toggle="collapse" data-bs-target="#" aria-expanded="false" aria-controls="moreDescription" id="button2id">Add</button>
+                    <button onclick="removeElement('row2')" class="btn btn-danger btn-sm btn-block" type="button" data-bs-toggle="collapse" data-bs-target="#" aria-expanded="false" aria-controls="moreDescription" id="button2id">Delete</button>
+                    <button onclick="location.href = 'p8.html';" class="btn btn-info btn-sm btn-block" type="button" data-bs-toggle="collapse" data-bs-target="#" aria-expanded="false" aria-controls="moreDescription" id="button2id">Edit</button>
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <!-- DUMMY EDIT ITEM BREADSTICK START -->
+
+        <div id="row3" class="row" style="margin-top: 50px; padding-bottom: 10vh;">
+            <div class="col-md-6" style="display: flex; justify-content: center;">
+                <img src="image/breadsticks.png" alt="" style="max-width: 300px; max-height: 300px; margin-top: auto;">
+            </div>
+
+            <div class="col-md-6">
+
+
+                <!--Product info, leave div blank if the characteristic does not apply-->
+
+                <div class="product-info-top">
+                    <h6 class="aisle-title">BAKERY</h6>
+                </div>
+                <div class="productEdit">
+                    <div class="product-name">Breadsticks</div>
+
+                    <div class="product-price">0.99$ ea</div>
+
+                    <button class="btn btn-sm btn-block myButton" type="button" data-bs-toggle="collapse" data-bs-target="#moreDescription" aria-expanded="false" aria-controls="moreDescription" style="background-color: rgb(250, 250, 250);">Product Description</button>
+
+                    <div class="collapse product-description" id="moreDescription">
+                        Delicious breadsticks
+
+                        <br>Product Number: 356787654
+                    </div>
+
+
+                    <div class="product-size"></div>
+                    <div class="product-quantity">
+                        <h4>Quantity in storage:</h4>
+                        <h3>50</h3>
+
+                    </div>
+                    <div class="product-type"></div>
+                    <button onclick="location.href = 'p8.html';" class="btn btn-success btn-sm btn-block" type="button" data-bs-toggle="collapse" data-bs-target="#" aria-expanded="false" aria-controls="moreDescription" id="button3id">Add</button>
+                    <button onclick="removeElement('row3')" class="btn btn-danger btn-sm btn-block" type="button" data-bs-toggle="collapse" data-bs-target="#" aria-expanded="false" aria-controls="moreDescription" id="button3id">Delete</button>
+                    <button onclick="location.href = 'p8.html';" class="btn btn-info btn-sm btn-block" type="button" data-bs-toggle="collapse" data-bs-target="#" aria-expanded="false" aria-controls="moreDescription" id="button3id">Edit</button>
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+
+    <!--footer-->
+    <div class="container-fluid py-4" style="background-color: rgb(233, 233, 233); text-align: right; height: 120px; margin-top: 50px;">
+        <p>© FOOD&STUFF Inc 2021.</p>
+    </div>
+
+    <script src=javascript4.js></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+
+</html>
